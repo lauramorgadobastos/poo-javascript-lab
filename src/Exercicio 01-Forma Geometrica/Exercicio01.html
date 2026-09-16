@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 01 - Formas Geométricas</title>
     <link rel="stylesheet" href="/poo-javascript-lab/css/styles.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/css/exercicio01.css">
 </head>
+
 <body>
+    <!-- Menu Lateral -->
     <div class="app-container">
         <aside class="sidebar">
             <h2>Exercícios JS</h2>
             <nav>
                 <ul>
-                  <a href="Exercicio01.html"></a>  <li><button data-ex="1">1. Formas Geométricas</button></li>
+                    <a href="Exercicio01.html"></a>
+                    <li><button data-ex="1">1. Formas Geométricas</button></li>
                     <li><button data-ex="2">2. Agenda Telefônica</button></li>
                     <li><button data-ex="3">3. Controle de Empréstimo</button></li>
                     <li><button data-ex="4">4. Funcionário & Gerente</button></li>
@@ -23,9 +28,34 @@
                 </ul>
             </nav>
         </aside>
-   
-        
 
-    <script src="Exercicio01.js"></script>
+        <!-- Main - Contúdo  -->
+
+        <main class="main-content">
+            <h2> Calculadora de Área </h2>
+            <br>
+            <!-- Seletor para escolher a forma -->
+            <label for="tipo-forma">Escolha a forma geométrica:</label>
+            <select id="tipo-forma">
+                <option value="quadrado">Quadrado</option>
+                <option value="retangulo">Retângulo</option>
+                <option value="triangulo">Triângulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+
+            <!-- Área dinâmica onde os inputs vão aparecer -->
+            <div id="inputs-container">
+                <!-- Os campos de input serão gerados aqui pelo JS -->
+            </div>
+
+            <button id="calcular-btn">Calcular Área</button>
+
+            <!-- Onde o resultado vai aparecer -->
+            <p id="resultado-output"></p>
+        </main>
+
+
+        <script src="Exercicio01.js"></script>
 </body>
+
 </html>
