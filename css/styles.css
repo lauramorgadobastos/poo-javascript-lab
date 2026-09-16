@@ -1,0 +1,92 @@
+/*Configurações Gerais - index.html */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+
+}
+/*Menu Lateral */
+.sidebar {
+    width: 280px;
+    background-color: #1e1e2e;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #cdd6f4;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #313244;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+/* Pagina Principal */
+.welcome-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #333;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.main-header .subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.info-banner {
+    background-color: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.call-to-action {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
