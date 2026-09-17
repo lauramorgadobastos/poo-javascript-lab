@@ -1,4 +1,4 @@
-// Programa de agenda telefônica, com as classes Agenda e Contato
+// Programa de agenda telefônica com as classes Agenda e Contato
 
 class Agenda {
     constructor() {
