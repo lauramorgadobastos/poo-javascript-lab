@@ -21,7 +21,7 @@ body {
 }
 
 .main-content h1 {
-    color: #4a586e;
+    color: #2b2d30;
     font-size: 1.8rem;
 }
 
@@ -33,7 +33,7 @@ body {
 
 /* Estilo das caixas (Cards) */
 .card {
-    background-color: #d6d8da;
+    background-color: white;
     border-radius: 12px;
     padding: 1.5rem 2rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
