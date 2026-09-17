@@ -42,10 +42,47 @@
         <!-- Main - Contúdo  -->
 
         <main class="main-content">
-        </main>
 
+        <h1> Simulador de Futebol</h1>
+        
+        <form id="form-simulador">
+            <div class="teams-grid">
+                <!-- Card Time 1 -->
+                <div class="card">
+                    <h3>Time 1</h3>
+                    <div class="input-field">
+                        <label for="nomeTime1">Nome do Time:</label>
+                        <input type="text" id="nomeTime1" placeholder="Ex: Flamengo" required>
+                    </div>
+                    <div class="player-input-group" id="container-time1">
+                        <!-- Os 11 campos são gerados aqui pelo JS -->
+                    </div>
+                </div>
+        
+                <!-- Card Time 2 -->
+                <div class="card">
+                    <h3>Time 2</h3>
+                    <div class="input-field">
+                        <label for="nomeTime2">Nome do Time:</label>
+                        <input type="text" id="nomeTime2" placeholder="Ex: Vasco" required>
+                    </div>
+                    <div class="player-input-group" id="container-time2">
+                        <!-- Os 11 campos são gerados aqui pelo JS -->
+                    </div>
+                </div>
+            </div>
+        
+            <button type="submit" class="btn-simular">Simular Partida</button>
+        </form>
+        
+        <!-- Card do Placar -->
+        <div class="card" id="resultado">
+            <h2>Resultado</h2>
+            <p>Preencha os times e clique em simular para ver o placar.</p>
+        </div>
+           
         </main>
-        <script src="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.js"></script>
+        <script src="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio05.js"> </script>
 </body>
 
 </html>

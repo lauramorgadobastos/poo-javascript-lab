@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f4f6f9;
+}
+
+/* Área principal ajustada ao menu */
+.main-content {
+    flex: 1;
+    padding: 2.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-content h1 {
+    color: #4a586e;
+    font-size: 1.8rem;
+}
+
+.main-content h2,
+.main-content h3 {
+    color: #516a8f;
+    margin-bottom: 1rem;
+}
+
+/* Estilo das caixas (Cards) */
+.card {
+    background-color: #d6d8da;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Organização dos cards dos times lado a lado */
+.teams-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: start;
+}
+
+/* Ajuste nos inputs dos jogadores para não estourarem a largura */
+.player-input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.main-content input[type="text"] {
+    width: 100%;
+}
+
+/* Responsividade: empilha apenas em telas bem pequenas (ex: celulares) */
+@media (max-width: 850px) {
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estrutura dos inputs */
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.main-content input[type="text"] {
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    background-color: #f7fafc;
+    color: #1a202c;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.main-content input[type="text"]:focus {
+    border-color: #718096;
+    background-color: #ffffff;
+}
+
+/* Botão no padrão cinza do  layout */
+.btn-simular {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-simular:hover {
+    background-color: #334155;
+}
+
+/* Area de Exibição do Resultado */
+#resultado p {
+    font-size: 1.05rem;
+    color: #2d3748;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
