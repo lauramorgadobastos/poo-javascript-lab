@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f4f6f9;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Cards (Contêineres) */
+.card {
+    background-color: white;
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+    color: #4a4d50;
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+/* Campos de Entrada e Selects */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px 14px;
+    border: 1px solid #c4c2ba;
+    border-radius: 8px;
+    background-color: #f7f6f2;
+    color: #333;
+    font-size: 0.95rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #4a4e51;
+    background-color: #ffffff;
+}
+
+/* Botões Estilizados */
+button {
+    background-color: #4a4e51;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #35383a;
+}
+
+/* Detalhes da Lista e Resumo */
+#listaItens {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+#listaItens li {
+    border-left: 3px solid #6c7073;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    color: #55585b;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#infoPedido,
+p {
+    color: #55585b;
+    font-size: 1rem;
+}
