@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 06 - Surpermecado </title>
+    <link rel="stylesheet" href="/poo-javascript-lab/src/styles.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/src/06-supermercado/exercicio06.css">
+
+</head>
+
+<body>
+    <!-- Menu Lateral -->
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>Exercícios JS</h2>
+            <nav>
+                <ul>
+                    <a href="/poo-javascript-lab/src/01-forma-geometrica/exercicio01.html">
+                        <li><button data-ex="1">1. Formas Geométricas</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/02-agenda-telefonica/exercicio02.html">
+                        <li><button data-ex="2">2. Agenda Telefônica</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/03-controle-de-emprestimo/exercicio03.html">
+                        <li><button data-ex="3">3. Controle de Empréstimo</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.html">
+                        <li><button data-ex="4">4. Funcionário & Gerente</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio05.html">
+                        <li><button data-ex="5">5. Simulador de Futebol</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/06-supermercado/exercicio06.html">
+                        <li><button data-ex="6">6. Supermercado</button></li>
+                    </a>
+                    <li><button data-ex="7">7. Árvore Genealógica</button></li>
+                    <li><button data-ex="8">8. Gestão da Turma</button></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main - Contúdo  -->
+
+        <main class="main-content">
+
+            <!-- Cadastrar Produto -->
+            <div class="card">
+                <h2>Cadastrar Produto</h2>
+                <input type="text" id="pNome" placeholder="Nome do Produto">
+                <input type="text" id="pTipo" placeholder="Tipo (ex: Bebida)">
+                <input type="number" id="pPreco" placeholder="Preço (R$)" step="0.01">
+                <input type="number" id="pEstoque" placeholder="Qtd Estoque">
+                <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+            </div>
+
+            <!-- Criar Pedido -->
+            <div class="card">
+                <h2>Novo Pedido</h2>
+                <input type="text" id="cNome" placeholder="Nome do Cliente">
+                <select id="formaPagamento">
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Cheque">Cheque</option>
+                </select>
+                <button onclick="criarPedido()">Iniciar Pedido</button>
+            </div>
+
+            <!-- Adicionar Itens -->
+            <div class="card">
+                <h2>Adicionar Item ao Pedido</h2>
+                <select id="selectProduto">
+                    <option value="">Selecione um produto</option>
+                </select>
+                <input type="number" id="itemQtde" placeholder="Quantidade" min="1">
+                <button onclick="adicionarItem()">Adicionar Item</button>
+            </div>
+
+            <!-- Resumo e Finalização -->
+            <div class="card">
+                <h2>Carrinho de Compras</h2>
+                <p id="infoPedido">Nenhum pedido aberto no momento.</p>
+                <ul id="listaItens"></ul>
+                <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
+                <button onclick="finalizarPedidoAtual()">Finalizar Pedido</button>
+            </div>
+
+
+        </main>
+        <script src="/poo-javascript-lab/src/06-supermercado/exercicio06.js"> </script>
+</body>
+
+</html>
