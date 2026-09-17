@@ -1,0 +1,71 @@
+.main-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #d9d9d9;
+}
+
+.card {
+    background-color: #eae8dd;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #2c2c2c;
+    font-size: 1.4rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1a1a1a;
+}
+
+/* Formatação do resultado igual */
+.resultado-item {
+    border-left: 4px solid #666666;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    color: #444444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
