@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercício 04 - Funcionário & Gerente</title>
     <link rel="stylesheet" href="/poo-javascript-lab/src/styles.css">
-    <link rel="stylesheet" href="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio.css">
 
 </head>
 
@@ -42,39 +42,47 @@
         <!-- Main - Contúdo  -->
 
         <main class="main-content">
-            <h2>Cálculo de Bônus de Funcionário / Gerente</h2>
 
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome">
+        <h1> Simulador de Futebol</h1>
+        
+        <form id="form-simulador">
+            <div class="teams-grid">
+                <!-- Card Time 1 -->
+                <div class="card">
+                    <h3>Time 1</h3>
+                    <div class="input-field">
+                        <label for="nomeTime1">Nome do Time:</label>
+                        <input type="text" id="nomeTime1" placeholder="Ex: Flamengo" required>
+                    </div>
+                    <div class="player-input-group" id="container-time1">
+                        <!-- Os 11 campos são gerados aqui pelo JS -->
+                    </div>
+                </div>
+        
+                <!-- Card Time 2 -->
+                <div class="card">
+                    <h3>Time 2</h3>
+                    <div class="input-field">
+                        <label for="nomeTime2">Nome do Time:</label>
+                        <input type="text" id="nomeTime2" placeholder="Ex: Vasco" required>
+                    </div>
+                    <div class="player-input-group" id="container-time2">
+                        <!-- Os 11 campos são gerados aqui pelo JS -->
+                    </div>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="salario">Salário:</label>
-                <input type="number" id="salario">
-            </div>
-
-            <div class="form-group">
-                <label for="cargo">Cargo:</label>
-                <select id="cargo" onchange="togglePessoas()">
-                    <option value="funcionario">Funcionário</option>
-                    <option value="gerente">Gerente</option>
-                </select>
-            </div>
-
-            <div class="form-group" id="campoPessoas" style="display: none;">
-                <label for="npessoas">Nº de Pessoas Gerenciadas:</label>
-                <input type="number" id="npessoas">
-            </div>
-
-            <button onclick="calcular()">Calcular Bônus</button>
-
-            <p id="resultado"></p>
-
+        
+            <button type="submit" class="btn-simular">Simular Partida</button>
+        </form>
+        
+        <!-- Card do Placar -->
+        <div class="card" id="resultado">
+            <h2>Resultado</h2>
+            <p>Preencha os times e clique em simular para ver o placar.</p>
+        </div>
+           
         </main>
-
-        </main>
-        <script src="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.js"></script>
+        <script src="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio05.js"> </script>
 </body>
 
 </html>
