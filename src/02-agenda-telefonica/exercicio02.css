@@ -1,0 +1,118 @@
+/* Estilo geral da área principal */
+
+.main-content {
+    padding: 135px;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+/* Criação de "Cards" para separar visualmente cada área */
+
+.cadastro-section,
+.busca-section,
+.lista-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+/*  Estilizando os campos de texto e formulários */
+form,
+.busca-section {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Botões */
+#adicionar {
+    padding: 12px 20px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #334155;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#btn-buscar {
+    padding: 12px 20px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Botão de limpar busca */
+#btn-limpar {
+    background-color: #64748b;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#btn-limpar:hover {
+    background-color: #475569;
+}
+
+/* Estilizando a lista de contatos */
+#lista-contatos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-contatos li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    border-left: 4px solid #1e293b;
+}
+
+hr {
+    display: none;
+}
