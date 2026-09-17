@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Exercício 06 - Surpermecado </title>
+    <title> Exercício 07 - Árvore Genealógica </title>
     <link rel="stylesheet" href="/poo-javascript-lab/src/styles.css">
-    <link rel="stylesheet" href="/poo-javascript-lab/src/06-supermercado/exercicio06.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.css">
 
 </head>
 
@@ -44,54 +44,15 @@
                 </ul>
             </nav>
             </aside>
+
         <!-- Main - Contúdo  -->
 
         <main class="main-content">
-
-            <!-- Cadastrar Produto -->
-            <div class="card">
-                <h2>Cadastrar Produto</h2>
-                <input type="text" id="pNome" placeholder="Nome do Produto">
-                <input type="text" id="pTipo" placeholder="Tipo (ex: Bebida)">
-                <input type="number" id="pPreco" placeholder="Preço (R$)" step="0.01">
-                <input type="number" id="pEstoque" placeholder="Qtd Estoque">
-                <button onclick="cadastrarProduto()">Cadastrar Produto</button>
-            </div>
-
-            <!-- Criar Pedido -->
-            <div class="card">
-                <h2>Novo Pedido</h2>
-                <input type="text" id="cNome" placeholder="Nome do Cliente">
-                <select id="formaPagamento">
-                    <option value="Dinheiro">Dinheiro</option>
-                    <option value="Cartão">Cartão</option>
-                    <option value="Cheque">Cheque</option>
-                </select>
-                <button onclick="criarPedido()">Iniciar Pedido</button>
-            </div>
-
-            <!-- Adicionar Itens -->
-            <div class="card">
-                <h2>Adicionar Item ao Pedido</h2>
-                <select id="selectProduto">
-                    <option value="">Selecione um produto</option>
-                </select>
-                <input type="number" id="itemQtde" placeholder="Quantidade" min="1">
-                <button onclick="adicionarItem()">Adicionar Item</button>
-            </div>
-
-            <!-- Resumo e Finalização -->
-            <div class="card">
-                <h2>Carrinho de Compras</h2>
-                <p id="infoPedido">Nenhum pedido aberto no momento.</p>
-                <ul id="listaItens"></ul>
-                <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
-                <button onclick="finalizarPedidoAtual()">Finalizar Pedido</button>
-            </div>
-
+        
 
         </main>
-        <script src="/poo-javascript-lab/src/06-supermercado/exercicio06.js"> </script>
+
+        <script src="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.js"> </script>
 </body>
 
 </html>
