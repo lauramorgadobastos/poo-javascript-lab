@@ -1,3 +1,8 @@
+/* Cálculo da área de uma figura geométrica. Aceita quatro tipos de figura
+geométrica: quadrado, retângulo, triângulo e círculo */
+
+// Class Forma geométrica (Herança e polimorfismo)
+
 class FormaGeometrica {
     constructor(nome) {
         this.nome = nome;
