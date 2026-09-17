@@ -1,0 +1,87 @@
+/* Layout da área principal */
+.main-content {
+    flex: 1;
+    background-color: #f4f6f9;
+    padding: 35px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-content h2 {
+    color: #334155;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Cards em branco */
+.card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: #475569;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Estrutura do Formulário */
+.card form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+/* Inputs em linha */
+.card input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #334155;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.card input::placeholder {
+    color: #94a3b8;
+}
+
+.card input:focus {
+    border-color: #64748b;
+}
+
+/* Botões no estilo do print */
+.card button {
+    background-color: #64748b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card button:hover {
+    background-color: #475569;
+}
+
+/* Mensagem de status com borda lateral*/
+#mensagem-status {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-left: 4px solid #64748b;
+    color: #475569;
+    font-size: 0.95rem;
+}
