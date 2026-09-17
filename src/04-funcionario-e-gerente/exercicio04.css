@@ -1,0 +1,79 @@
+/* Container que engloba o menu e o conteúdo */ 
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Garante que a barra lateral mantenha a largura fixa */
+.sidebar {
+    width: 250px;
+    background-color: #1a1e29;
+    flex-shrink: 0;
+}
+
+/* Área principal */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Título */
+.main-content h2 {
+    color: #1e293b;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Agrupamento dos campos  */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+    max-width: 360px;
+}
+
+.form-group label {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+/* Inputs e Selects */
+.form-group input,
+.form-group select {
+    padding: 10px 12px;
+    border: 1px solid #c2c6ca;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    color: #333333;
+    outline: none;
+}
+
+/* Botão padrão da imagem */
+.main-content button {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.main-content button:hover {
+    background-color: #334155;
+}
+
+/* Caixa de Resultado */
+#resultado {
+    margin-top: 20px;
+    color: #444444;
+    font-weight: 500;
+}
