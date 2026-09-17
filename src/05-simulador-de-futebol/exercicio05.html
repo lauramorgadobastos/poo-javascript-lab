@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercício 04 - Funcionário & Gerente</title>
     <link rel="stylesheet" href="/poo-javascript-lab/src/styles.css">
-    <link rel="stylesheet" href="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio.css">
 
 </head>
 
@@ -29,7 +29,9 @@
                     <a href="/poo-javascript-lab/src/04-funcionario-e-gerente/exercicio04.html">
                         <li><button data-ex="4">4. Funcionário & Gerente</button></li>
                     </a>
-                   <a href="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio05.html"> <li><button data-ex="5">5. Simulador de Futebol</button></li></a>
+                    <a href="/poo-javascript-lab/src/05-simulador-de-futebol/exercicio05.html">
+                        <li><button data-ex="5">5. Simulador de Futebol</button></li>
+                    </a>
                     <li><button data-ex="6">6. Supermercado</button></li>
                     <li><button data-ex="7">7. Árvore Genealógica</button></li>
                     <li><button data-ex="8">8. Gestão da Turma</button></li>
@@ -40,35 +42,6 @@
         <!-- Main - Contúdo  -->
 
         <main class="main-content">
-        <h2>Cálculo de Bônus de Funcionário / Gerente</h2>
-        
-        <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-        </div>
-        
-        <div class="form-group">
-            <label for="salario">Salário:</label>
-            <input type="number" id="salario">
-        </div>
-        
-        <div class="form-group">
-            <label for="cargo">Cargo:</label>
-            <select id="cargo" onchange="togglePessoas()">
-                <option value="funcionario">Funcionário</option>
-                <option value="gerente">Gerente</option>
-            </select>
-        </div>
-        
-        <div class="form-group" id="campoPessoas" style="display: none;">
-            <label for="npessoas">Nº de Pessoas Gerenciadas:</label>
-            <input type="number" id="npessoas">
-        </div>
-        
-        <button onclick="calcular()">Calcular Bônus</button>
-        
-        <p id="resultado"></p>
-
         </main>
 
         </main>
