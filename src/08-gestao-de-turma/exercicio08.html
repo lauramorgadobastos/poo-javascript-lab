@@ -47,10 +47,45 @@
 
         <!-- Main - Contúdo  -->
 
-        <main class="main-content">
-        
-
-        </main>
+    <main class="main-content">
+    <div class="card-interface">
+        <h2>Gestão da Turma</h2>
+    
+        <!-- Formulário de Entrada -->
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="nomeAluno">Nome do Aluno</label>
+                <input type="text" id="nomeAluno" placeholder="Nome completo">
+            </div>
+    
+            <div class="input-group">
+                <label for="raAluno">Registro Acadêmico</label>
+                <input type="text" id="raAluno" placeholder="Ex: 12345">
+            </div>
+    
+            <div class="input-group">
+                <label for="notaAluno">Nota (0 a 10)</label>
+                <input type="number" id="notaAluno" min="0" max="10" step="0.1" placeholder="Ex: 8.5">
+            </div>
+        </div>
+    
+        <div class="botoes-acao">
+            <button id="btnAdicionar" class="btn-primario">Adicionar Aluno</button>
+            <button id="btnCalcular" class="btn-secundario">Gerar Resultados</button>
+        </div>
+    
+        <!-- Área de Resultados -->
+        <div class="resultados-section">
+            <h3>Lista de Alunos</h3>
+            <ul id="listaAlunosVisual" class="lista-alunos"></ul>
+    
+            <h3>Resultados da Turma</h3>
+            <div id="painelResultados" class="painel-estatisticas">
+                <p>Adicione alunos e clique em "Gerar Resultados".</p>
+            </div>
+        </div>
+    </div>
+    </main>
 
         <script src="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.js"> </script>
 </body>

@@ -53,7 +53,7 @@ select:focus {
 }
 
 /* Botões Estilizados */
-button {
+#button {
     background-color: #4a4e51;
     color: #ffffff;
     border: none;
@@ -68,7 +68,6 @@ button {
 button:hover {
     background-color: #35383a;
 }
-
 /* Detalhes da Lista e Resumo */
 #listaItens {
     list-style: none;
