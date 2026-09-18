@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS OOP Web Back-End </title>
-    <link rel="stylesheet" href="styles.css">
+    <title> Exercício 07 - Árvore Genealógica </title>
+    <link rel="stylesheet" href="/poo-javascript-lab/src/styles.css">
+    <link rel="stylesheet" href="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.css">
+
 </head>
 
 <body>
+    <!-- Menu Lateral -->
     <div class="app-container">
         <aside class="sidebar">
             <h2>Exercícios JS</h2>
@@ -40,32 +43,51 @@
                     </a>
                 </ul>
             </nav>
-        </aside>
+            </aside>
 
-        <main id="app" class="content">
-            .<div class="welcome-container">
-                <!-- Cabeçalho Principal -->
-                <header class="main-header">
-                    <h1>Exercícios de JavaScript & POO</h1>
-                    <p class="subtitle">Interfaces interativas com Programação Orientada a Objetos em HTML5 e JS</p>
-                </header>
-                <!-- Requisitos Gerais -->
-                <div class="info-banner">
-                    <h3> Requisitos Gerais</h3>
-                    <p>Todos os projetos utilizam interface visual em HTML5 e lógica interativa em JavaScript, aplicando
-                        obrigatoriamente conceitos centrais de <strong>Orientação a Objetos</strong> (Herança,
-                        Polimorfismo e
-                        Encapsulamento).</p>
-                </div>
+        <!-- Main - Contúdo  -->
 
-                <!-- Chamada para Ação  -->
-                <div class="call-to-action">
-                    <span> Selecione um exercício no menu ao lado para visualizar e testar a aplicação.</span>
-                </div>
-
-
-        </main>
+    <main class="main-content">
+    <div class="card-interface">
+        <h2>Gestão da Turma</h2>
+    
+        <!-- Formulário de Entrada -->
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="nomeAluno">Nome do Aluno</label>
+                <input type="text" id="nomeAluno" placeholder="Nome completo">
+            </div>
+    
+            <div class="input-group">
+                <label for="raAluno">Registro Acadêmico</label>
+                <input type="text" id="raAluno" placeholder="Ex: 12345">
+            </div>
+    
+            <div class="input-group">
+                <label for="notaAluno">Nota (0 a 10)</label>
+                <input type="number" id="notaAluno" min="0" max="10" step="0.1" placeholder="Ex: 8.5">
+            </div>
+        </div>
+    
+        <div class="botoes-acao">
+            <button id="btnAdicionar" class="btn-primario">Adicionar Aluno</button>
+            <button id="btnCalcular" class="btn-secundario">Gerar Resultados</button>
+        </div>
+    
+        <!-- Área de Resultados -->
+        <div class="resultados-section">
+            <h3>Lista de Alunos</h3>
+            <ul id="listaAlunosVisual" class="lista-alunos"></ul>
+    
+            <h3>Resultados da Turma</h3>
+            <div id="painelResultados" class="painel-estatisticas">
+                <p>Adicione alunos e clique em "Gerar Resultados".</p>
+            </div>
+        </div>
     </div>
+    </main>
+
+        <script src="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.js"> </script>
 </body>
 
 </html>

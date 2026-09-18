@@ -35,12 +35,15 @@
                     <a href="/poo-javascript-lab/src/06-supermercado/exercicio06.html">
                         <li><button data-ex="6">6. Supermercado</button></li>
                     </a>
-                    <li><button data-ex="7">7. Árvore Genealógica</button></li>
-                    <li><button data-ex="8">8. Gestão da Turma</button></li>
+                    <a href="/poo-javascript-lab/src/07-arvore-genealogica/exercicio07.html">
+                        <li><button data-ex="7">7. Árvore Genealógica</button></li>
+                    </a>
+                    <a href="/poo-javascript-lab/src/08-gestao-de-turma/exercicio08.html">
+                        <li><button data-ex="8">8. Gestão da Turma</button></li>
+                    </a>
                 </ul>
             </nav>
-        </aside>
-
+            </aside>
         <!-- Main - Contúdo  -->
 
         <main class="main-content">
@@ -52,7 +55,7 @@
                 <input type="text" id="pTipo" placeholder="Tipo (ex: Bebida)">
                 <input type="number" id="pPreco" placeholder="Preço (R$)" step="0.01">
                 <input type="number" id="pEstoque" placeholder="Qtd Estoque">
-                <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+                <button onclick="cadastrarProduto()"id="button">Cadastrar Produto</button>
             </div>
 
             <!-- Criar Pedido -->
@@ -64,7 +67,7 @@
                     <option value="Cartão">Cartão</option>
                     <option value="Cheque">Cheque</option>
                 </select>
-                <button onclick="criarPedido()">Iniciar Pedido</button>
+                <button onclick="criarPedido()" id="button">Iniciar Pedido</button>
             </div>
 
             <!-- Adicionar Itens -->
@@ -74,7 +77,7 @@
                     <option value="">Selecione um produto</option>
                 </select>
                 <input type="number" id="itemQtde" placeholder="Quantidade" min="1">
-                <button onclick="adicionarItem()">Adicionar Item</button>
+                <button onclick="adicionarItem()"id="button">Adicionar Item</button>
             </div>
 
             <!-- Resumo e Finalização -->
@@ -83,7 +86,7 @@
                 <p id="infoPedido">Nenhum pedido aberto no momento.</p>
                 <ul id="listaItens"></ul>
                 <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
-                <button onclick="finalizarPedidoAtual()">Finalizar Pedido</button>
+                <button onclick="finalizarPedidoAtual()"id="button">Finalizar Pedido</button>
             </div>
 
 
